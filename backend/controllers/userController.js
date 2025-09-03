@@ -59,8 +59,8 @@ const loginUser = asyncHandler(async (req, res) => {
     // Set JWT as an httpOnly, secure cookie
     res.cookie("jwt", token, {
       httpOnly: true,
-      secure: false, // Set to false for local HTTP testing and true for  production
-      sameSite: "strict",
+      secure: true, // Set to false for local HTTP testing and true for  production
+      sameSite: "none",
       maxAge: 30 * 24 * 60 * 60 * 1000,
     });
 
