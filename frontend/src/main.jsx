@@ -5,7 +5,7 @@ import './index.css';
 import axios from 'axios';
 
 // Set the base URL for all backend API calls
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://notes-taking-backend-weka.onrender.com';
 // This is CRITICAL for sending cookies with every request
 axios.defaults.withCredentials = true;
 
